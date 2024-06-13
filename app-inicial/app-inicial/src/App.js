@@ -1,14 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+export default function App() {
 
-function App() {
-  return (
-    <div className="App">
-      <header className="">
-        <h1>Compreensão inicial</h1>
-      </header>
-    </div>
-  );
+  const tarefa = {id: "T1", descricao:"Estudar React", conluida: true};
+ /*
+  if(tarefa.conluida){
+    return <p>Tarefa conluída: {tarefa.descricao}</p>
+  } else{
+    return <p>Tarefa pendente: {tarefa.descricao}</p>
+  }
+}
+*/
+
+/* sintaxe mais limpar */
+return<p>
+  Tarefa{(tarefa.concluida) ? "CONCLUÍDA":"PENDENTE"}: {tarefa.descricao}
+</p>
 }
 
-export default App;
+/** para o caso de uma */
