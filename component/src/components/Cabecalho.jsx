@@ -1,5 +1,8 @@
-export default function Cabecalho() {
+export default function Cabecalho(props) {
   return (
-    <div>Cabecalho</div>
+    <header>
+        <h1>App React em Funcao</h1>
+        {props.children}
+    </header>
   )
 }

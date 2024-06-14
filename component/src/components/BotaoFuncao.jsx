@@ -1,6 +1,10 @@
-export default function BotaoFuncao() {
+export default function BotaoFuncao(props) {
   return (
-    <button onClick={(
-        )=> console.log("Clicou na funcao")}> Clique (Funcao)</button>
-  )
+        <button type='button'
+        onClick={() =>
+        console.log('Clicou em função!')}
+        >
+        {props.nome}
+        </button>
+    )
 }
